@@ -1,37 +1,33 @@
 .statistics {
-  width: 250px;
-  margin: 0 auto;
-  background-color: aliceblue;
+  background-color: var(--second-bg);
   text-align: center;
   border-radius: 7px;
-  box-shadow: 5px 5px 5px 1px rgb(0 0 0 / 20%);
+  box-shadow: 5px 5px 5px 1px var(--shadow-color);
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .title {
   margin: 20px;
-  color: dimgrey;
 }
 
 .statList {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .item {
+  width: calc(100% / 5);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 60px;
   padding: 0 10px;
-  border-top: 1px rgba(0, 0, 0, 0.192) solid;
+  border-top: 1px var(--border-color) solid;
 }
 
 .item:not(:last-child) {
-  border-right: 1px rgba(0, 0, 0, 0.192) solid;
+  border-right: 1px var(--border-color) solid;
 }
 
 .label {

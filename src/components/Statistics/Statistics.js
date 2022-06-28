@@ -10,7 +10,7 @@ function Statistics({ title, stats }) {
         {stats.map(el => (
           <li className={s.item} key={el.id}>
             <span className={s.label}>{el.label}</span>
-            <span className={s.percentage}>{el.percentage}</span>
+            <span className={s.percentage}>{el.percentage}%</span>
           </li>
         ))}
       </ul>
@@ -20,11 +20,13 @@ function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
-  }),
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default Statistics;

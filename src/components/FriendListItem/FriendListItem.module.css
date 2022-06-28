@@ -1,0 +1,33 @@
+.item {
+  width: 15%;
+  background-color: var(--second-bg);
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px 1px var(--shadow-color);
+  padding: 10px 5px;
+}
+
+.avatar {
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.name {
+  margin-bottom: 5px;
+}
+
+.status {
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 0 auto;
+  background-color: brown;
+  border-radius: 50%;
+}
+
+.statusTrue {
+  composes: status;
+  background-color: darkgreen;
+}

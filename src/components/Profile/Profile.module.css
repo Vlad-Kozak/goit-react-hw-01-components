@@ -1,12 +1,10 @@
 .profile {
-  width: 250px;
-  margin: 0 auto;
   padding-top: 30px;
-  background-color: aliceblue;
+  background-color: var(--second-bg);
   text-align: center;
   border-radius: 7px;
-  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 40px;
+  box-shadow: 5px 5px 5px 1px var(--shadow-color);
+  margin-bottom: 25px;
 }
 
 .avatar {
@@ -24,7 +22,7 @@
 
 .tag,
 .location {
-  color: dimgray;
+  color: var(--second-color);
   margin-bottom: 10px;
 }
 
@@ -40,11 +38,11 @@
   padding: 5px;
   width: calc(100% / 3);
   height: 50px;
-  border-top: 1px rgba(0, 0, 0, 0.192) solid;
+  border-top: 1px var(--border-color) solid;
 }
 
 .item:not(:last-child) {
-  border-right: 1px rgba(0, 0, 0, 0.192) solid;
+  border-right: 1px var(--border-color) solid;
 }
 
 .quantity {

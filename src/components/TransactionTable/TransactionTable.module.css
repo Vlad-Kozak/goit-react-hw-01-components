@@ -1,0 +1,29 @@
+.transactionHistory {
+}
+
+table {
+  border-collapse: collapse;
+  width: 70vw;
+  margin: 0 auto;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px 1px var(--shadow-color);
+  overflow: hidden;
+}
+
+th {
+  border-bottom: 3px solid var(--border-color);
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background: var(--second-bg);
+}
+
+tr:nth-child(even) {
+  background-color: #f0f8ffb2;
+}

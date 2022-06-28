@@ -1,8 +1,18 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --primary-bg: #d3d3d3;
+  --second-bg: #f0f8ff;
+  --primary-color: #000000;
+  --second-color: #696969;
+  --border-color: rgba(0, 0, 0, 0.192);
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: lightgray;
+  background-color: var(--primary-bg);
+  padding: 20px 0;
 }
 
 h1,
