@@ -26,7 +26,9 @@ export const App = () => {
         <FriendList friends={friends} />
       </Container>
 
-      <TransactionTable transactions={transactions} />
+      <Container>
+        <TransactionTable transactions={transactions} />
+      </Container>
     </>
   );
 };

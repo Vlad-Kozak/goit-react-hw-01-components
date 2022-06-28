@@ -2,9 +2,8 @@
 }
 
 table {
+  width: 100%;
   border-collapse: collapse;
-  width: 70vw;
-  margin: 0 auto;
   border-radius: 7px;
   box-shadow: 5px 5px 5px 1px var(--shadow-color);
   overflow: hidden;
